@@ -17,6 +17,8 @@ title: Welcome to ZYF
 
 - **代码相关**
  -  [[C++程序设计及算法]]
+- **软件相关**
+ - [[PPT绘图快捷键]]
 
 ---
 ![C 转 C++.png](https://img.kosjd.me/file/1765713817427_C_转_C__.png)
