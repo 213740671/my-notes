@@ -15,8 +15,7 @@ title: Welcome to ZYF
 
 ## 🗂️ 知识导航 (Navigation)
 
-- [[工具箱]] - 效率工具与软件分享
-- [[Reading List]] - 最近在读的书
+- [[C++程序设计及算法]] 算法相关
 
 ---
 ![C 转 C++.png](https://img.kosjd.me/file/1765713817427_C_转_C__.png)
