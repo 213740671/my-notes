@@ -15,7 +15,8 @@ title: Welcome to ZYF
 
 ## 🗂️ 知识导航 (Navigation)
 
-- [[C++程序设计及算法]] 算法相关
+- **代码相关**
+ -  [[C++程序设计及算法]]
 
 ---
 ![C 转 C++.png](https://img.kosjd.me/file/1765713817427_C_转_C__.png)
