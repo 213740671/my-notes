@@ -6,7 +6,7 @@ title: Welcome to ZYF
 这里是我的数字花园，用于记录学习以及我对技术的探索。
 
 ---
-## 计划书
+## 🏷 计划书
 
 - [ ] C语言转C++,蓝桥杯备赛
 - [ ] PCB制版学习
@@ -19,6 +19,6 @@ title: Welcome to ZYF
 - [[Reading List]] - 最近在读的书
 
 ---
-
+![C 转 C++.png](https://img.kosjd.me/file/1765713817427_C_转_C__.png)
 > [!quote] Daily Note
 > *“Talk is cheap. Show me the code (and the data).”*
