@@ -21,21 +21,7 @@
 
 ## 补充知识
 
-### 布线的技巧和原则
-
-- 不允许出现90°线条（1.时刻过程中会导致腐蚀液在直角处堆积导致成型时在直角处形成<span style="color:#CC00CC; font-weight:bold;">锐角</span>腐蚀，在板子弯折时会产生裂缝。2.信号完整性受损，在高速板-超过1GHZ 会产生信号回声效应。）
-- 分线时走T形布线，然后应用<span style="color:#0066CC; font-weight:bold;">泪滴</span>
-- <span style="color:#0066CC; font-weight:bold;">泪滴</span>操作在布线的最后再做
-- <span style="font-weight:bold; color:#FF0000;">插件</span>式器件正反面都可以使用焊盘走线，<span style="font-weight:bold; color:#FF0000;">贴片</span>则不行
-- <span style="font-weight:bold;">GND</span>走线时不需要处理，最后进行<span style="color:#CC6600; font-weight:bold;">铺铜</span>就行（顶层底层都需要铺铜）先将地线走线隐藏
-- <span style="font-weight:bold;">DRC</span>检测是根据厂商的生产能力规定的
-- 考虑连接电源铜线的<span style="color:#FF0000; font-weight:bold;">载流能力</span>(本质是考虑发热量)  一般板内电流不会超过200 ma。可以使用网页计算器。更改步骤:设计->设计规则->铺铜->多层焊盘->发散线宽 or 连接方式: 发散->直连。
-- 网络标签不能有<span style="color:#FF0000; font-weight:bold;">空格</span>
-- GND周围存在<span style="color:#9933FF; font-weight:bold;">孤岛</span>(顶层底层都与其他铺铜处不相连，但是形状不一样，可以通过在一侧打过孔连接到另一侧非孤岛的铺铜部分)，可以通过打<span style="font-weight:bold; color:#FF0000;">过孔</span>处理
-- **输入引脚**：**必须**有一个确定的电平，所以<span style="text-decoration:underline; font-weight:bold;">不应悬空</span>。需要根据逻辑要求接上拉或下拉电阻。
-- **输出引脚**：**可以**悬空。因为它本身就能决定自己的电平，不接外部电路也无所谓。
-- 单片机引脚输出的是<span style="font-weight:bold; color:#CC0000;">信号</span>，不是电流，既电流方向并不是一定向外流。
-- 贴片器件较多，需要多打<span style="font-weight:bold; color:#CC0000;">缝合孔</span>，通过物理连接PCB中的多个接地或电源层，帮助形成一个连续、均匀的接地或电源网络。从而减少电路噪声和阻抗，尤其是在高频或高速信号的应用中。（最后做）
+### [[布线规则]]
 
 ### [[电容滤波原理]]
 
