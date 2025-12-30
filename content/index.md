@@ -22,6 +22,10 @@ title: Welcome to ZYF
  - [[PPT绘图快捷键]]
 
 ---
+## 🚌工具箱(Tool box)
+- [[Quartz主题修改]]
+- [[claude code斜杠命令]]
+- [[PPT绘图快捷键]]
 ![C 转 C++.png](https://img.kosjd.me/file/1765713817427_C_转_C__.png)
 > [!quote] Daily Note
 > *“Talk is cheap. Show me the code (and the data).”*
