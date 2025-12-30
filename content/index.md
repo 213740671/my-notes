@@ -26,6 +26,7 @@ title: Welcome to ZYF
 - [[Quartz主题修改]]
 - [[claude code斜杠命令]]
 - [[PPT绘图快捷键]]
+- [[AI studio 转API]]
 ![C 转 C++.png](https://img.kosjd.me/file/1765713817427_C_转_C__.png)
 > [!quote] Daily Note
 > *“Talk is cheap. Show me the code (and the data).”*
