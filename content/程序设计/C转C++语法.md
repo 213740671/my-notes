@@ -1,8 +1,7 @@
 ---
-title: "从C语言到C++竞赛速成指南（蓝桥杯专用）"
-source: "https://www.cnblogs.com/mfoj/articles/19447471"
+title: C转C++语法
+source: https://www.cnblogs.com/mfoj/articles/19447471
 author:
-  - "[[飞花阁]]"
 published: 2026-01-06
 created: 2026-01-09
 tags:
