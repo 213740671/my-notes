@@ -13,7 +13,7 @@ tags:
 
 ### 1.1 输入输出
 
-**C语言方式** ： `printf/scanf` 或 `getchar/putchar`
+**C语言方式**： `printf/scanf` 或 `getchar/putchar`
 
 ```c
 int a;
@@ -23,7 +23,7 @@ scanf("%d", &a);
 printf("%d\n", a);
 ```
 
-**C++方式** ： `cin/cout`
+**C++方式**： `cin/cout`
 
 ```cpp
 #include <iostream>
@@ -143,7 +143,7 @@ string str = to_string(123);     // 数字转字符串
 
 ### 2.2 vector动态数组
 
-**一维数组** ：
+**一维数组**：
 
 ```cpp
 #include <vector>
@@ -167,7 +167,7 @@ v[0] = 5;                   // 访问
 sort(v.begin(), v.end());   // 排序
 ```
 
-**二维数组** ：
+**二维数组**：
 
 ```cpp
 // 1. 声明n行m列
@@ -243,7 +243,7 @@ for(int i = 0; i < rows; i++) {
 #include <bitset>    // 位集
 ```
 
-**set集合** ：
+**set集合**：
 
 ```cpp
 set<int> s = {3, 1, 4, 1, 5};  // {1, 3, 4, 5}
@@ -261,7 +261,7 @@ s.lower_bound(3); // >=3的第一个元素
 s.upper_bound(3); // >3的第一个元素
 ```
 
-**map映射** ：
+**map映射**：
 
 ```cpp
 map<string, int> mp;
@@ -279,7 +279,7 @@ mp.erase("apple");   // 删除
 mp.size();           // 大小
 ```
 
-**栈和队列** ：
+**栈和队列**：
 
 ```cpp
 // 栈
@@ -319,7 +319,7 @@ priority_queue<int> max_heap;  // 最大堆
 priority_queue<int, vector<int>, greater<int>> min_heap;  // 最小堆
 ```
 
-**bitset位集** ：
+**bitset位集**：
 
 ```cpp
 bitset<8> b("11110000");  // 8位二进制
@@ -918,20 +918,18 @@ string add_bigint(const string& a, const string& b) {
 
 ## 学习建议
 
-1. **循序渐进** ：先掌握vector、sort，再学set、map
-2. **多练习** ：在洛谷、Codeforces等平台刷题
-3. **善用STL** ：STL能大幅简化代码
-4. **注意效率** ：大数据量时注意时间空间限制
-5. **代码规范** ：使用有意义的变量名，添加注释
+1. **循序渐进**：先掌握vector、sort，再学set、map
+2. **多练习**：在洛谷、Codeforces等平台刷题
+3. **善用STL**：STL能大幅简化代码
+4. **注意效率**：大数据量时注意时间空间限制
+5. **代码规范**：使用有意义的变量名，添加注释
 
 ## 常用快捷键
 
-- `Ctrl + /` ：注释/取消注释
-- `Ctrl + D` ：复制当前行
-- `Ctrl + Shift + F` ：格式化代码
-- `F5` ：编译运行
-- `F9` ：设置断点
+- `Ctrl + /`：注释/取消注释
+- `Ctrl + D`：复制当前行
+- `Ctrl + Shift + F`：格式化代码
+- `F5`：编译运行
+- `F9`：设置断点
 
 ---
-
-_祝你蓝桥杯竞赛取得好成绩！记住：掌握基本工具，多加练习，保持冷静。_
