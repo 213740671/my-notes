@@ -5,17 +5,9 @@ author:
   - "[[飞花阁]]"
 published: 2026-01-06
 created: 2026-01-09
-description: "第一部分：基础语法差异 1.1 输入输出 C语言方式：printf/scanf 或 getchar/putchar int a; scanf(\"%d\", &a); printf(\"%d\n\", a); C++方式：cin/cout #include &"
 tags:
-  - "clippings"
+  - clippings
 ---
-[![](https://img2024.cnblogs.com/blog/35695/202506/35695-20250620221146444-645204917.webp)](https://www.doubao.com/?channel=cnblogs&source=hw_db_cnblogs&type=lunt&theme=bianc)
-
-📂
-
-🔖
-
-2026-01-06 14:15 阅读: 115 评论: 0 推荐: 0
 
 ## 第一部分：基础语法差异
 
@@ -38,7 +30,7 @@ printf("%d\n", a);
 
 using namespace std;
 
- 
+
 
 int a;
 
@@ -66,7 +58,7 @@ cout.tie(nullptr);
 
 using namespace std;      // 使用标准命名空间
 
- 
+
 
 // 或使用传统头文件
 
@@ -112,13 +104,13 @@ auto x = 10;         // 自动类型推导（C++11）
 
 using namespace std;
 
- 
+
 
 string s1 = "Hello";
 
 string s2 = "World";
 
- 
+
 
 // 常用操作
 
@@ -182,7 +174,7 @@ sort(v.begin(), v.end());   // 排序
 
 vector<vector<int>> matrix(n, vector<int>(m, 0));
 
- 
+
 
 // 2. 先声明后调整
 
@@ -196,7 +188,7 @@ for(int i = 0; i < n; i++) {
 
 }
 
- 
+
 
 // 3. 直接初始化
 
@@ -210,7 +202,7 @@ vector<vector<int>> matrix = {
 
 };
 
- 
+
 
 // 访问和遍历
 
@@ -218,9 +210,9 @@ int rows = matrix.size();
 
 int cols = matrix[0].size();
 
-matrix[2][3] = 10;  // 访问
+matrix[2][3] = 10;  // 访问（注意下标不要越界）
 
- 
+
 
 // 遍历
 
@@ -302,7 +294,7 @@ stk.pop();          // 出栈
 
 stk.empty();        // 判空
 
- 
+
 
 // 队列
 
@@ -318,7 +310,7 @@ q.back();           // 队尾
 
 q.empty();
 
- 
+
 
 // 优先队列
 
@@ -350,11 +342,11 @@ int cnt = b.count();     // 1的个数
 ```cpp
 #include <cctype>  // 字符处理函数
 
- 
+
 
 char ch = 'A';
 
- 
+
 
 // 判断函数
 
@@ -374,7 +366,7 @@ ispunct(ch);   // 是否为标点符号
 
 isxdigit(ch);  // 是否为十六进制数字
 
- 
+
 
 // 转换函数
 
@@ -382,13 +374,13 @@ toupper('a');  // 'a' -> 'A'
 
 tolower('B');  // 'B' -> 'b'
 
- 
+
 
 // 实际应用
 
 string str = "Hello World 123!";
 
- 
+
 
 // 统计字符类型
 
@@ -404,7 +396,7 @@ for(char c : str) {
 
 }
 
- 
+
 
 // 转换为大写
 
@@ -414,7 +406,7 @@ for(char& c : str) {
 
 }
 
- 
+
 
 // 判断回文字符串（忽略大小写和标点）
 
@@ -448,11 +440,11 @@ bool is_palindrome(const string& s) {
 
 #include <functional>
 
- 
+
 
 vector<int> v = {3, 1, 4, 1, 5};
 
- 
+
 
 // 排序
 
@@ -460,7 +452,7 @@ sort(v.begin(), v.end());                    // 升序
 
 sort(v.begin(), v.end(), greater<int>());    // 降序
 
- 
+
 
 // 查找
 
@@ -472,7 +464,7 @@ lower_bound(v.begin(), v.end(), 3);          // >=3的第一个
 
 upper_bound(v.begin(), v.end(), 3);          // >3的第一个
 
- 
+
 
 // 最值
 
@@ -480,7 +472,7 @@ upper_bound(v.begin(), v.end(), 3);          // >3的第一个
 
 *min_element(v.begin(), v.end());           // 最小值
 
- 
+
 
 // 操作
 
@@ -490,19 +482,17 @@ rotate(v.begin(), v.begin()+2, v.end());    // 旋转
 
 next_permutation(v.begin(), v.end());       // 下一个排列
 
- 
+
 
 // 计数
 
 count(v.begin(), v.end(), 1);               // 计数
 
-count_if(v.begin(), v.end(), int x{     // 条件计数
-
+count_if(v.begin(), v.end(), [](int x) {  // 条件计数
     return x > 2;
-
 });
 
- 
+
 
 // 累加
 
@@ -534,7 +524,7 @@ auto it = v.begin();            // vector<int>::iterator
 ```cpp
 vector<int> v = {1, 2, 3, 4, 5};
 
- 
+
 
 // 只读遍历
 
@@ -544,7 +534,7 @@ for(int num : v) {
 
 }
 
- 
+
 
 // 可修改遍历
 
@@ -554,7 +544,7 @@ for(int& num : v) {
 
 }
 
- 
+
 
 // 只读引用（避免复制）
 
@@ -569,45 +559,26 @@ for(const int& num : v) {
 
 ```cpp
 // 基本形式
-
-auto add = int a, int b { return a + b; };
-
-cout << add(3, 4);  // 7
-
- 
+auto add = [](int a, int b) { return a + b; };
+cout << add(3, 4) << "\n";  // 7
 
 // 在算法中使用
-
 vector<int> v = {1, 2, 3, 4, 5};
 
 // 降序排序
-
-sort(v.begin(), v.end(), int a, int b{
-
+sort(v.begin(), v.end(), [](int a, int b) {
     return a > b;
-
 });
-
- 
 
 // 统计大于2的元素
-
-int cnt = count_if(v.begin(), v.end(), int x{
-
+int cnt = count_if(v.begin(), v.end(), [](int x) {
     return x > 2;
-
 });
 
- 
-
 // 捕获外部变量
-
 int base = 10;
-
-for_each(v.begin(), v.end(), int& x{
-
+for_each(v.begin(), v.end(), [&](int& x) {
     x += base;
-
 });
 ```
 
@@ -620,7 +591,7 @@ for_each(v.begin(), v.end(), int& x{
 
 using namespace std;
 
- 
+
 
 // 常用宏定义
 
@@ -638,7 +609,7 @@ const int MOD = 1e9 + 7;
 
 const int MAXN = 1e5 + 5;
 
- 
+
 
 int main() {
 
@@ -650,7 +621,7 @@ int main() {
 
     cout.tie(nullptr);
 
-    
+
 
     // 读取数据
 
@@ -658,7 +629,7 @@ int main() {
 
     cin >> n;
 
-    
+
 
     vector<int> arr(n);
 
@@ -668,13 +639,13 @@ int main() {
 
     }
 
-    
+
 
     // 处理逻辑
 
     sort(arr.begin(), arr.end());
 
-    
+
 
     // 输出
 
@@ -684,7 +655,7 @@ int main() {
 
     }
 
-    
+
 
     return 0;
 
@@ -740,7 +711,7 @@ bool is_all_digits(const string& s) {
 
 }
 
- 
+
 
 // 字符串分割
 
@@ -762,7 +733,7 @@ vector<string> split(const string& s, char delimiter) {
 
 }
 
- 
+
 
 // 快速幂
 
@@ -796,7 +767,7 @@ vector<int> v;
 
 v.reserve(1000000);  // 预分配空间，避免多次扩容
 
- 
+
 
 // 2. 使用emplace_back代替push_back
 
@@ -806,7 +777,7 @@ v.emplace_back(1, 2);  // 直接在容器中构造
 
 v.push_back({1, 2});   // 先构造，再复制
 
- 
+
 
 // 3. 使用unordered_set/map提高查找速度
 
@@ -830,7 +801,7 @@ v.clear();                     // 只清空元素
 
 vector<int>().swap(v);         // 真正释放内存
 
- 
+
 
 // 2. 使用移动语义
 
@@ -850,11 +821,11 @@ vector<int> v2 = move(v1);    // 移动而非复制
 
 #else
 
-#define debug(x) 
+#define debug(x)
 
 #endif
 
- 
+
 
 // 2. 运行时错误检查
 
@@ -882,7 +853,7 @@ struct Student {
 
     bool operator<(const Student& other) const {
 
-        if(score != other.score) 
+        if(score != other.score)
 
             return score > other.score;  // 分数降序
 
@@ -892,7 +863,7 @@ struct Student {
 
 };
 
- 
+
 
 vector<Student> students;
 
@@ -963,24 +934,4 @@ string add_bigint(const string& a, const string& b) {
 
 ---
 
-*祝你蓝桥杯竞赛取得好成绩！记住：掌握基本工具，多加练习，保持冷静。*
-
-本文作者：飞花阁
-
-本文链接：https://www.cnblogs.com/mfoj/articles/19447471
-
-版权声明：本作品采用知识共享署名-非商业性使用-禁止演绎 2.5 中国大陆 许可协议 进行许可。
-
-//雪花飘落效果
-
-✽
-
-✽
-
-✽
-
-✽
-
-✽
-
-✽
+_祝你蓝桥杯竞赛取得好成绩！记住：掌握基本工具，多加练习，保持冷静。_
