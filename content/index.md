@@ -18,8 +18,7 @@ title: Welcome to ZYF
 
 - **代码相关**
  -  [[C++程序设计及算法]]
-- **软件相关**
- - [[PPT绘图快捷键]]
+ - 
 
 ---
 ## 🚌工具箱(Tool box)
@@ -27,6 +26,7 @@ title: Welcome to ZYF
 - [[claude code斜杠命令]]
 - [[PPT绘图快捷键]]
 - [[AI studio 转API]]
+- [[一键激活JetBrains全家桶方式]]
 ![C 转 C++.png](https://img.kosjd.me/file/1765713817427_C_转_C__.png)
 > [!quote] Daily Note
 > *“Talk is cheap. Show me the code (and the data).”*
