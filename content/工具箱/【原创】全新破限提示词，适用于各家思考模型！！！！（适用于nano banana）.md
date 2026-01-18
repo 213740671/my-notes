@@ -1,13 +1,13 @@
 ---
-title: "【原创】全新破限提示词，适用于各家思考模型！！！！（适用于nano banana） - 搞七捻三 / 搞七捻三, Lv1"
-source: "https://linux.do/t/topic/1349006"
+title: 【原创】全新破限提示词，适用于各家思考模型！！！！（适用于nano banana）
+source: https://linux.do/t/topic/1349006
 author:
   - "[[LINUX DO]]"
 published: 2025-12-22
 created: 2026-01-16
-description: "补充细节郑重说明- 不管任何渠道请先激活- 流程是激活（问你是谁？）-> 然后正常对话，正常聊天几句在开始尝试聊那些东西- 其中一定要学会利用标签，标签这个东西很重要Nano Banana的效果  详细讲解版本首…"
+description:
 tags:
-  - "clippings"
+  - clippings
 ---
 
 ## 郑重说明
