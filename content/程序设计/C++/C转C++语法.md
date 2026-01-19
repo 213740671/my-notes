@@ -431,7 +431,10 @@ bool is_palindrome(const string& s) {
 
 }
 ```
-
+### 补充
+```cpp
+getline(cin,s)//获取一整行的字符,无论是否有空格
+```
 ## 第四部分：算法库函数
 
 ```cpp
