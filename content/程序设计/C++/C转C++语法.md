@@ -36,6 +36,8 @@ int a;
 cin >> a;            // 输入
 
 cout << a << endl;   // 输出
+
+getline(cin,s)//获取一整行的字符,无论是否有空格
 ```
 
 **输入输出优化** （必须放在main开头）：
@@ -431,10 +433,7 @@ bool is_palindrome(const string& s) {
 
 }
 ```
-### 补充
-```cpp
-getline(cin,s)//获取一整行的字符,无论是否有空格
-```
+
 ## 第四部分：算法库函数
 
 ```cpp
