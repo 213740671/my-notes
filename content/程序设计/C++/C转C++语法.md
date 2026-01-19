@@ -140,7 +140,7 @@ int num = stoi("123");           // 字符串转int
 string str = to_string(123);     // 数字转字符串
 ```
 
-### 2.2 vector动态数组
+### 2.2 [[vector,栈和队列的定义理解|vector动态数组]]
 
 **一维数组**：
 
